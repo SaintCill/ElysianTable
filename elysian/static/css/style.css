@@ -1,0 +1,681 @@
+/*   GENERAL   */
+
+
+body {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+
+
+
+.uppercase {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+
+.text-align-center {
+    text-align:center;
+}
+
+
+
+.space-between {
+    margin-top: 350px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+/*   NAVBAR   */
+
+
+
+.nav-item a {
+    color: #ffffff;
+    font-size: 25px;
+    margin: 0 1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+
+.nav-item a:hover {
+    color: #ff0000;
+}
+
+
+
+
+
+
+
+
+
+/*   HEADER | HOME   */
+
+
+
+.top-section-home {
+    background: url("/static/images/volkan-vardar-1H30uRC1plc-unsplash.jpg") center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+
+.title-header {
+    font-size: 3.5rem;
+    color: #ffffff;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+
+.title-text p {
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+
+.title-text > p {
+    text-align:center;
+}
+
+.nav-home-text  a {
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.btn-container {
+    margin-top: 2rem;
+}
+
+
+.btn-light {
+    background-color: #ffcc00;
+    color: #000000;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-light:hover {
+    background-color: #e6b800; /* Button background color on hover */
+}
+
+
+.reservation-info {
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+
+
+
+
+/*  FEATURES | HOME  */
+
+
+
+
+
+.home-content {
+    background: rgb(32, 32, 32);
+}
+
+
+
+.home-features {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 150px;
+}
+
+.home-features > h2 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+
+.home-features > p {
+    font-style: italic;
+    color: grey;
+}
+
+
+.home-features-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.home-features-content {
+    width: 500px;;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+
+}
+
+
+.home-features-content h3,
+.home-features-content p {
+    padding: 10px;
+}
+
+
+
+
+
+
+/*           ABOUT SECTION               */
+
+
+
+
+
+
+
+/*  ABOUT SECTION | ABOUT  */
+
+.top-section-about {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/static/images/restaurant-interior.jpg");
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.about-header {
+    font-size: 3.5rem;
+    color: #ffcc00;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.title-text p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.buttons-container {
+    display: flex;
+    margin-top: 2rem;
+    width:100%;
+}
+
+.button-group {
+    margin: 0 10px;
+}
+
+.btn-custom {
+    background: none;
+    padding: 10px 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-custom a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-custom:hover {
+    background-color: #5a6268; /* Button background color on hover */
+    color: #ffffff; /* Button text color on hover */
+}
+
+.btn-custom a:hover {
+    text-decoration: none;
+}
+
+.about-section {
+    background: rgb(48, 48, 48);
+    color: white;
+}
+
+.about-section p {
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+/*         BOOKING SECTION                 */
+
+
+
+
+
+
+
+
+
+
+
+/*   BOOKING | BOOKING   */
+
+.booking-background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/static/images/pexels-sydney-troxell.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+#booking-section {
+    margin-bottom: 50px;
+}
+
+
+.booking-header {
+    padding-top: 150px;
+}
+
+.booking-header h2 {
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.booking-text {
+    color: white;
+}
+
+
+
+.nav-booking-text  a {
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+
+.make-reservation {
+    padding-left: 50px;
+}
+
+.special-request {
+    width: 920px;
+}
+
+
+
+
+
+/*                   MENU SECTION                   */
+
+
+
+
+
+
+
+
+
+/*   MENU   */
+
+.menu-section {
+    background: grey;
+}
+
+
+.top-section-menu {
+    position: relative;
+    background: url('/static/images/pexels-sydney-troxell.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.title-header {
+    font-size: 3.5rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.nav-menu-text a {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+.menu-section {
+    padding: 50px 0;
+}
+
+.card {
+    background-color: #d0d4d8; /* Light gray background for cards */
+    border: none; /* Remove border from cards */
+}
+
+.card-body {
+    padding: 1.25rem; /* Padding inside card bodies */
+    border-radius: 0.25rem; /* Rounded corners for card bodies */
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.2rem;
+}
+
+.menu-booking-btn {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Red background color for button */
+    color: #fff; /* White text color for button */
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Darker red on hover */
+    color: #fff; /* Maintain white text on hover */
+}
+
+.btn-danger:focus {
+    outline: none; /* Remove outline on focus */
+}
+
+
+
+
+
+
+
+/*               CONTACT                       */
+
+
+
+
+
+
+
+
+
+.top-section-contact {
+    background: url(/static/images/contact-background.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-header {
+    font-size: 50px;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-header-text {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.nav-home-text a {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    padding: 10px;
+}
+
+.nav-home-text a:hover {
+    color: #ff0000;
+}
+
+.contact-section {
+    background: #f5f5f5;
+    padding: 50px 0;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group label {
+    font-weight: bold;
+}
+
+.contact-form .btn-primary {
+    background-color: #42280e;
+    border-color: #42280e;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #f8b400;
+    border-color: #f8b400;
+}
+
+.contact-success {
+    min-height: calc(100vh - 468px);
+}
+
+
+
+
+
+
+
+
+
+
+/*                FOOTER SECTION                 */
+
+
+
+
+
+
+/*   FOOTER TEMPLATE | BASE   */
+
+
+.footer-container {
+    background-color: #42280e;
+    color: #ffffff;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copyright {
+    font-size: 16px;
+}
+
+.footer-link {
+    display: inline-block;
+    margin-right: 15px;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.footer-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.footer-link a:hover {
+    background: red;
+}
+
+
+
+
+
+
+
+
+
+
+/*               MEDIA QUERIES             */
+
+
+
+@media (max-width: 1200px) {
+    .title-header {
+        font-size: 3rem;
+    }
+    
+    .title-text p {
+        font-size: 1.3rem;
+    }
+
+    .nav-home-text a {
+        font-size: 25px;
+    }
+    
+    .btn-light {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .title-header {
+        font-size: 2.5rem;
+    }
+
+    .title-text p {
+        font-size: 1.2rem;
+    }
+
+    .nav-home-text a {
+        font-size: 22px;
+    }
+    
+    .btn-light {
+        padding: 0.5rem 1rem;
+    }
+    
+    .home-features-content {
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title-header {
+        font-size: 2rem;
+    }
+
+    .title-text p {
+        font-size: 1rem;
+    }
+
+    .nav-home-text a {
+        font-size: 20px;
+    }
+    
+    .btn-light {
+        padding: 0.5rem 1rem;
+    }
+    
+    .home-features-content {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .top-section-home {
+        height: auto;
+        padding: 20px;
+    }
+
+    .title-header {
+        font-size: 1.5rem;
+    }
+
+    .title-text p {
+        font-size: 0.9rem;
+    }
+
+    .nav-home-text a {
+        font-size: 18px;
+    }
+    
+    .btn-light {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .home-features-content {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+
+/*   FOOTER   */
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-links-container {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .footer-link {
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us - Elysian Table{% endblock %}
+
+{% block content %}
+<header class="top-section-contact">
+    <h1 class="contact-header">Elysian Table</h1>
+    <nav>
+        <ul class="nav justify-content-center">
+            <li class="nav-item nav-home-text uppercase">
+                <a class="nav-link" href="{% url 'home' %}">home</a>
+            </li>
+            <li class="nav-item nav-home-text uppercase">
+                <a class="nav-link" href="{% url 'about' %}">about</a>
+            </li>
+            <li class="nav-item nav-home-text uppercase">
+                <a class="nav-link" href="{% url 'menu' %}">menu</a>
+            </li>
+            <li class="nav-item nav-home-text uppercase">
+                <a class="nav-link" href="{% url 'contact' %}">contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="row container-fluid title-text justify-content-center">
+        <p class="col contact-header-text">
+            We would love to hear from you!
+        </p>
+    </div>
+</header>
+
+<section class="contact-section contact-success">
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <p class="text-align-center">SUCCESS! We will contact you at our earliest convinience, or at a specified time if provided.</p>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+
+{% block title %}Menu - Elysian Table{% endblock %}
+
+{% block content %}
+
+<header class="top-section-menu">
+    <div class="menu-background-image"></div>
+    <h1 class="title-header">Elysian Table</h1>
+    <nav>
+        <ul class="nav justify-content-center">
+            <li class="nav-item nav-menu-text uppercase">
+                <a class="nav-link" href="{% url 'home' %}">home</a>
+            </li>
+            <li class="nav-item nav-menu-text uppercase">
+                <a class="nav-link" href="{% url 'about' %}">about</a>
+            </li>
+            <li class="nav-item nav-menu-text uppercase">
+                <a class="nav-link" href="{% url 'menu' %}">menu</a>
+            </li>
+            <li class="nav-item nav-home-text uppercase">
+                <a class="nav-link" href="{% url 'contact' %}">contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section class="menu-section">
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Our Menu</h1>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <!-- Starters -->
+                <h2 class="mb-4">Starters</h2>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Smoked Salmon Tartare</h5>
+                        <p class="card-text">Freshly smoked salmon mixed with capers, dill, and a hint of lemon, served with toasted brioche.</p>
+                        <p class="card-text"><strong>Price: $28.00</strong></p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Truffle Mushroom Soup</h5>
+                        <p class="card-text">A creamy blend of wild mushrooms and truffle oil, topped with a dollop of crème fraîche.</p>
+                        <p class="card-text"><strong>Price: $22.00</strong></p>
+                    </div>
+                </div>
+                <!-- Main Courses -->
+                <h2 class="mb-4">Main Courses</h2>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Filet Mignon</h5>
+                        <p class="card-text">Prime beef filet cooked to perfection, served with a red wine reduction and seasonal vegetables.</p>
+                        <p class="card-text"><strong>Price: $75.00</strong></p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Pan-Seared Sea Bass</h5>
+                        <p class="card-text">Delicately pan-seared sea bass with a lemon-butter sauce, accompanied by a risotto primavera.</p>
+                        <p class="card-text"><strong>Price: $65.00</strong></p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Herb-Crusted Rack of Lamb</h5>
+                        <p class="card-text">Tender lamb rack with a fresh herb crust, served with garlic mashed potatoes and green beans.</p>
+                        <p class="card-text"><strong>Price: $85.00</strong></p>
+                    </div>
+                </div>
+                <!-- Desserts -->
+                <h2 class="mb-4">Desserts</h2>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Molten Chocolate Lava Cake</h5>
+                        <p class="card-text">Rich chocolate cake with a gooey molten center, served with vanilla bean ice cream.</p>
+                        <p class="card-text"><strong>Price: $20.00</strong></p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Crème Brûlée</h5>
+                        <p class="card-text">Classic vanilla bean custard with a caramelized sugar crust, garnished with fresh berries.</p>
+                        <p class="card-text"><strong>Price: $18.00</strong></p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Lemon Sorbet</h5>
+                        <p class="card-text">Refreshing lemon sorbet served with a mint sprig and a hint of lime zest.</p>
+                        <p class="card-text"><strong>Price: $15.00</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DRINKS -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Our Drinks Menu</h1>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <!-- Cocktails -->
+                <h2 class="mb-4">Cocktails</h2>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic Martini</h5>
+                        <p class="card-text">A timeless blend of gin and dry vermouth, garnished with an olive or a lemon twist.</p>
+                        <p class="card-text"><strong>Price: $18.00</strong></p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Mojito</h5>
+                        <p class="card-text">Refreshing mix of white rum, fresh mint, lime juice, sugar, and soda water.</p>
+                        <p class="card-text"><strong>Price: $16.00</strong></p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Old Fashioned</h5>
+                        <p class="card-text">A smooth blend of bourbon, sugar, Angostura bitters, and a twist of orange.</p>
+                        <p class="card-text"><strong>Price: $20.00</strong></p>
+                    </div>
+                </div>
+                <!-- Wines -->
+                <h2 class="mb-4">Wines</h2>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Chardonnay</h5>
+                        <p class="card-text">A crisp and fruity white wine with notes of apple, citrus, and vanilla.</p>
+                        <p class="card-text"><strong>Price: $15.00 per glass / $60.00 per bottle</strong></p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Cabernet Sauvignon</h5>
+                        <p class="card-text">A full-bodied red wine with flavors of dark berries, oak, and a hint of spice.</p>
+                        <p class="card-text"><strong>Price: $18.00 per glass / $70.00 per bottle</strong></p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Rosé</h5>
+                        <p class="card-text">A refreshing and aromatic wine with notes of strawberry, cherry, and rose petals.</p>
+                        <p class="card-text"><strong>Price: $12.00 per glass / $50.00 per bottle</strong></p>
+                    </div>
+                </div>
+                <!-- Non-Alcoholic -->
+                <h2 class="mb-4">Non-Alcoholic Beverages</h2>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Sparkling Water</h5>
+                        <p class="card-text">Chilled sparkling water with a slice of lemon or lime.</p>
+                        <p class="card-text"><strong>Price: $5.00</strong></p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Freshly Squeezed Orange Juice</h5>
+                        <p class="card-text">A glass of freshly squeezed orange juice, served chilled.</p>
+                        <p class="card-text"><strong>Price: $6.00</strong></p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Herbal Tea</h5>
+                        <p class="card-text">A soothing blend of herbal tea, perfect for relaxation.</p>
+                        <p class="card-text"><strong>Price: $5.50</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row container-fluid">
+        <div class="col-12 menu-booking-btn">
+            <a href="{% url 'book_table' %}">
+                <button class="btn btn-danger">Check Reservations!</button>
+            </a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+
+
+

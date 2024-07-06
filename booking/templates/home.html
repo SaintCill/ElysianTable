@@ -1,0 +1,118 @@
+
+
+{% extends 'base.html' %}
+
+{% block title %}Home - Elysian Table{% endblock %}
+
+{% block content %}
+<header class="top-section-home">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-8 text-center">
+                <h1 class="title-header">Elysian Table</h1>
+                <nav>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link nav-home-text" href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-home-text" href="{% url 'about' %}">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-home-text" href="{% url 'menu' %}">Menu</a>
+                        </li>
+                        <li class="nav-item nav-home-text uppercase">
+                            <a class="nav-link" href="{% url 'contact' %}">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="title-text">
+                    <p>
+                        Come experience world-class food. We offer exquisite fine dining,
+                        live music, and fantastic service.
+                    </p>
+                </div>
+                <div class="btn-container">
+                    <a class="btn btn-light" href="{% url 'book_table' %}">Book a Table</a>
+                    <p class="reservation-info">Click above to check our reservations!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<section class="container-fluid home-content">
+    <div class="row">
+        <div class="col home-features">
+            <h2 class="features-home-title">A world class restaurant</h2>
+            <p>Elysian table is close to being hailed as the eight wonder of the world,
+                and for good reason too. We offer the best dinning experience of any restaurant.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div data-aos="fade-up" class="col-md-12 offset-md-2 home-features-container">
+            <div class="row">
+                <div class="col-12 home-features-content">
+                    <h3>Exquisite Culinary Masterpieces</h3>
+                    <p>At Elysian Table, every dish is a work of art. Our culinary team, led by world-renowned chefs, 
+                        crafts exquisite dishes that tantalize the taste buds and delight the senses. From innovative 
+                        appetizers to decadent desserts, our menu features a harmonious blend of traditional flavors 
+                        and modern techniques, ensuring an unforgettable dining experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-up" class="col-md-12 offset-md-7 home-features-container container-fluid">
+            <div class="row">
+                <div class="col-12 home-features-content">
+                    <h3>Luxurious Ambiance</h3>
+                    <p>Step into a realm of elegance and sophistication at Elysian Table. Our restaurant is designed to 
+                        provide a luxurious ambiance that enhances your dining experience. With meticulously curated decor, 
+                        ambient lighting, and plush seating, every detail is crafted to offer a serene and opulent environment 
+                        where you can relax and enjoy your meal in style.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-up" class="col-md-12 offset-md-2 home-features-container">
+            <div class="row">
+                <div class="col-12 home-features-content">
+                    <h3>Impeccable Service</h3>
+                    <p>Our commitment to excellence extends beyond our cuisine. At Elysian Table, we pride ourselves on offering 
+                        impeccable service that is attentive, personalized, and unobtrusive. Our dedicated staff is trained to 
+                        anticipate your needs and provide a seamless dining experience, ensuring that you feel valued and pampered 
+                        from the moment you arrive until you leave.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-up" class="col-md-12 offset-md-7 home-features-container">
+            <div class="row">
+                <div class="col-12 home-features-content">
+                    <h3>Exclusive Wine Collection</h3>
+                    <p>Discover our exclusive wine collection, featuring some of the finest vintages from around the world. 
+                        Our sommeliers have carefully selected an extensive range of wines to complement our menu, each bottle chosen 
+                        for its exceptional quality and flavor profile. Whether you're a connoisseur or a casual enthusiast, our wine 
+                        list offers something for every palate.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-up" class="col-md-12 offset-md-2 home-features-container">
+            <div class="row">
+                <div class="col-12 home-features-content">
+                    <h3>Private Dining and Events</h3>
+                    <p>Elysian Table offers elegant private dining rooms and event spaces, perfect for intimate gatherings, celebrations, 
+                        and corporate events. Our team is dedicated to making your occasion memorable, providing customized menus, personalized 
+                        service, and a sophisticated setting that reflects the prestige of your event. Let us create an unforgettable experience 
+                        for you and your guests.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

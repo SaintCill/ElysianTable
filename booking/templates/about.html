@@ -1,0 +1,80 @@
+
+
+{% extends 'base.html' %}
+
+{% block title %}about - My Site{% endblock %}
+
+{% block content %}
+<header class="top-section-about">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h1 class="about-header">Elysian Table</h1>
+                <nav>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'about' %}">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'menu' %}">Menu</a>
+                        </li>
+                        <li class="nav-item nav-home-text uppercase">
+                            <a class="nav-link" href="{% url 'contact' %}">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="title-text">
+                    <p class="about-header-text">
+                        Every bite is a journey into perfection.
+                    </p>
+                </div>
+                <div class="buttons-container">
+                    <div class="button-group">
+                        <button id="booking-btn" class="btn-custom"><a href="{% url 'book_table' %}">Book a Table</a></button>
+                    </div>
+                    <div class="button-group">
+                        <button id="contact-us" class="btn-custom"><a href="{% url 'contact' %}">Contact Us</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section class="about-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">About Elysian Table</h2>
+        <p class="text-center mb-4">Welcome to <strong>Elysian Table</strong>, where culinary dreams come true. Recognized as the world’s finest dining establishment, Elysian Table redefines the boundaries of gourmet cuisine with an unparalleled blend of sophistication, innovation, and timeless elegance.</p>
+        
+        <h2 class="text-center mb-4">Our Philosophy</h2>
+        <p class="text-center mb-4">At Elysian Table, we believe that dining is not just about sustenance but an experience that engages all the senses. Our philosophy revolves around the harmony of flavors, the artistry of presentation, and the luxury of ambiance. Every dish is meticulously crafted to tell a story, capturing the essence of ingredients sourced from the finest purveyors around the globe.</p>
+        
+        <h2 class="text-center mb-4">Culinary Excellence</h2>
+        <p class="text-center mb-4">Our team of internationally acclaimed chefs brings a wealth of experience and creativity to the table. Each menu is a masterpiece, combining classic techniques with modern flair to create an unforgettable symphony of tastes. From our exquisite starters to our sumptuous main courses and divine desserts, every bite is a journey through the peaks of gastronomic delight.</p>
+        
+        <h2 class="text-center mb-4">The Ambiance</h2>
+        <p class="text-center mb-4">Designed to reflect elegance and comfort, Elysian Table offers an atmosphere that is both intimate and grand. Our dining rooms are adorned with luxurious decor, creating a perfect backdrop for any occasion, be it a romantic dinner, a business gathering, or a celebratory feast.</p>
+        
+        <h2 class="text-center mb-4">Our Promise</h2>
+        <p class="text-center mb-4">We are dedicated to providing an extraordinary dining experience that exceeds your expectations. Our attentive staff is committed to offering impeccable service, ensuring that your time with us is nothing short of perfection.</p>
+        
+        <p class="text-center">Join us at Elysian Table and embark on a culinary adventure where every meal is a celebration of the finest food, the best service, and the most beautiful setting. Discover why we are celebrated as the epitome of fine dining, where every detail is a testament to our pursuit of excellence.</p>
+    </div>
+
+
+    <div class="row justify-content-center buttons-container container-fluid">
+        <div class="col-12 button-group mb-4">
+            <label for="booking-btn" class="d-block mb-2">Hungry?</label>
+            <button id="booking-btn" class="btn-custom"><a href="{% url 'book_table'%}">Make a reservation</a></button>
+        </div>
+        <div class="col-12 button-group mb-4">
+            <label for="contact-us" class="d-block mb-2">Want to host an event or make a booking?</label>
+            <button id="contact-us" class="btn-custom"><a href="{% url 'contact' %}">Contact us</a></button>
+        </div>
+    </div>
+</section>
+{% endblock %}
