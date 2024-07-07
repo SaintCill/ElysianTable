@@ -53,11 +53,13 @@ To run the project locally, follow these steps:
 Open your browser and navigate to http://localhost:8000 to view the application.
 
 ## Future features:
-- Menu: Being able to add, remove and tweak menu items. I was going to add this feature along with the contact form, but ran into real life issues, so i might add it at a later date.
+- **Menu:** Being able to add, remove and tweak menu items. I was going to add this feature along with the contact form, but ran into real life issues, so i might add it at a later date.
   Not the most important thing in the world since fine dinning establishments seldom change their menues, but this may be a Sweden thing. Regardless, i would add it just to have done
   it once, incase i need to do it in future projects.
-- Login: Mostly for "staff", as a customer would have little reason to want to login to a fine dinning restaurants website, besides creating reservations straight in the system.
-- Email: Sending confirmation email for the reservation. I have the code ready, but didn't have time to set up with the email service. I also have a half way done way to answer emails
+  
+- **Login:** Mostly for "staff", as a customer would have little reason to want to login to a fine dinning restaurants website, besides creating reservations straight in the system.
+  
+- **Email:** Sending confirmation email for the reservation. I have the code ready, but didn't have time to set up with the email service. I also have a half way done way to answer emails
   directly from the django admin menu, as one would want if you were working as staff and had to answer emails.
 
 ## Deployment
