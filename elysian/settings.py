@@ -86,7 +86,8 @@ WSGI_APPLICATION = 'elysian.wsgi.application'
 #}
 
 DATABASES = {
-    'default': dj_database_url.config(postgresql://elysian_table_user:2byBji7VdikVpx3Hg6HhlHqDPAO8HqW7@dpg-cq4s2bg8fa8c73fugfrg-a/elysian_table, conn_max_age=600)
+    'default': dj_database_url.config('postgresql://elysian_table_user:2byBji7VdikVpx3Hg6HhlHqDPAO8HqW7@dpg-cq4s2bg8fa8c73fugfrg-a/elysian_table', conn_max_age=600)
+
 }
 
 
