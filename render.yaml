@@ -23,9 +23,5 @@ services:
       - key: WEB_CONCURRENCY
         value: 4
 
-# Static files configuration
-staticDirs:
-  - sourceDir: elysian/static
-    targetDir: /elysian/static
 
 
