@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', ' ').split()
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost 127.0.0.1').split()
 
 
 # Application definition
@@ -88,11 +88,15 @@ if DEBUG:
     }
 else:
     DATABASES = {
-        'default': dj_database_url.config(
-            'postgresql://elysian_table_user:2byBji7VdikVpx3Hg6HhlHqDPAO8HqW7@dpg-cq4s2bg8fa8c73fugfrg-a/elysian_table',
-            conn_max_age=600
-        )
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'elysian_table',
+            'USER': 'elysian_table_user',
+            'PASSWORD': '2byBji7VdikVpx3Hg6HhlHqDPAO8HqW7',
+            'HOST': 'dpg-cq4s2bg8fa8c73fugfrg-a',
     }
+}
+
 
 
 
