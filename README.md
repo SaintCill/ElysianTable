@@ -69,5 +69,9 @@ The project is configured to be deployed on platforms like Render. Ensure to set
 https://elysiantable.onrender.com
 
 
-## License
-This project is licensed under the MIT License.
+## Credits
+All images where sources from https://unsplash.com
+Images are royalty free, and credit goes to the person that submitted them. I sadly don't have all the names saved, since i had to restart the project once, due my hard drive deciding to die
+half way through this project.
+
+Special thanks to ChatGPT for saving me a lot of mental pain, as the first deployment (and the last, especially the last) where driving me insane.
