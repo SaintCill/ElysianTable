@@ -9,8 +9,10 @@ services:
     plan: free
     name: ElysianTable
     runtime: python
-    buildCommand: "./build.sh"
-    startCommand: "python -m gunicorn elysian.asgi:application -k uvicorn.workers.UvicornWorker"    
+    buildCommand: |
+      python manage.py collectstatic --noinput  # Collect static files during build
+      ./build.sh  # Your build command if needed
+    startCommand: "python -m gunicorn elysian.asgi:application -k uvicorn.workers.UvicornWorker"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
@@ -20,3 +22,10 @@ services:
         generateValue: true
       - key: WEB_CONCURRENCY
         value: 4
+
+# Static files configuration
+staticDirs:
+  - sourceDir: elysian/static
+    targetDir: /elysian/static
+
+
