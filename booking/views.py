@@ -4,6 +4,7 @@ from django.conf import settings
 from .forms import BookingForm, ContactForm
 from .models import Booking
 from django.contrib import messages
+from django.http import HttpResponse
 
 # Create your views here.
 
@@ -73,3 +74,8 @@ def contact_view(request):
         form = ContactForm()
 
     return render(request, 'contact.html', {'form': form})
+
+
+def get_css(request):
+    css_content = open('path/to/style.css').read()  # Adjust path as needed
+    return HttpResponse(css_content, content_type='text/css')
