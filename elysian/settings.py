@@ -88,14 +88,15 @@ if DEBUG:
     }
 else:
     DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'elysian_table',
-            'USER': 'elysian_table_user',
-            'PASSWORD': '2byBji7VdikVpx3Hg6HhlHqDPAO8HqW7',
-            'HOST': 'dpg-cq4s2bg8fa8c73fugfrg-a',
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'elysian_table',
+        'USER': 'elysian_table_user',
+        'PASSWORD': '2byBji7VdikVpx3Hg6HhlHqDPAO8HqW7',
+        'HOST': 'dpg-cq4s2bg8fa8c73fugfrg-a.oregon-postgres.render.com',
     }
 }
+
 
 
 
