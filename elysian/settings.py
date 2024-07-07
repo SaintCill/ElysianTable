@@ -80,18 +80,19 @@ WSGI_APPLICATION = 'elysian.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 
+#DATABASES = {
+ #   'default': {
+ #       'ENGINE': 'django.db.backends.postgresql',
+ #       'NAME': 'elysian_table',
+ #       'USER': 'elysian_table_user',
+ #       'PASSWORD': '2byBji7VdikVpx3Hg6HhlHqDPAO8HqW7',
+ #       'HOST': 'dpg-cq4s2bg8fa8c73fugfrg-a.oregon-postgres.render.com',
+ #   }
+#}
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'elysian_table',
-        'USER': 'elysian_table_user',
-        'PASSWORD': '2byBji7VdikVpx3Hg6HhlHqDPAO8HqW7',
-        'HOST': 'dpg-cq4s2bg8fa8c73fugfrg-a.oregon-postgres.render.com',
-    }
+    'default': dj_database_url.config('postgresql://elysian_table_user:2byBji7VdikVpx3Hg6HhlHqDPAO8HqW7@dpg-cq4s2bg8fa8c73fugfrg-a.oregon-postgres.render.com/elysian_table', conn_max_age=600)
 }
-
-
-
 
 
 
@@ -133,10 +134,11 @@ USE_TZ = True
 # Here, they well be accessible at your-domain.onrender.com/static/... or yourcustomdomain.com/static/...
 STATIC_URL = '/static/'
 # This production code might break development mode, so we check whether we're in DEBUG mode
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+if not DEBUG:    # Tell Django to copy static assets into a path called `staticfiles` (this is specific to Render)
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     # Enable the WhiteNoise storage backend, which compresses static files to reduce disk use
     # and renames the files with unique names for each version to support long-term caching
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
