@@ -16,7 +16,7 @@ import os
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 
@@ -79,17 +79,21 @@ WSGI_APPLICATION = 'elysian.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if DEBUG:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': dj_database_url.config(
+            'postgresql://elysian_table_user:2byBji7VdikVpx3Hg6HhlHqDPAO8HqW7@dpg-cq4s2bg8fa8c73fugfrg-a/elysian_table',
+            conn_max_age=600
+        )
+    }
 
-DATABASES = {
-    'default': dj_database_url.config('postgresql://elysian_table_user:2byBji7VdikVpx3Hg6HhlHqDPAO8HqW7@dpg-cq4s2bg8fa8c73fugfrg-a/elysian_table', conn_max_age=600)
-
-}
 
 
 
